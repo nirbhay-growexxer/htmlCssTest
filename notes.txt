@@ -1,0 +1,122 @@
+background: linear-gradient(94.91deg, #E2EA6E -1.8%, #ADB908 77.41%);
+
+background: linear-gradient(0deg, #313332, #313332),
+linear-gradient(273.34deg, #D6DE5A 3.64%, #ADB908 95.85%);
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
+
+Men’s Basketball Shoes
+
+The future of basketball is position less, and nobody embodies this evolution like MVP Giannis Antetokounmpo. The Giannis Immortality is a game shoe for players who love Giannis' multidimensional game and want a piece of his freaky style
+
+.content {
+ width: 434px;
+ height: 555px;
+}
+
+
+.blob1{
+    position:absolute;
+    z-index: -1;
+    /* width: 365.9px;
+    height: 373.54px; */
+    /* left: 873.85px;
+    top: 367.46px; */
+}
+.blob2{
+    position:absolute;
+    z-index: -2;
+    /* width: 354.18px;
+    height: 345.04px; */
+    /* left: 691.96px;
+    top: 446.28px; */
+    transform: rotate(-36.06deg);
+}
+.blob3{
+    position: absolute;
+    z-index: -3;
+    /* width: 354.18px;
+    height: 345.04px; */
+    /* left: 655px;
+    top: 367.46px; */
+}
+
+.nikeShoe{
+    z-index: 3;
+    position: absolute;
+    width: 586.79px;
+    height: 508.28px;
+    left: 712.53px;
+    top: 185px;
+}
+
+background: #DDE66533;
+
+
+.blob1 {
+    z-index: -1;
+    left: 291.9px;
+    top: 130.5px;
+}
+
+.blob2 {
+    z-index: -2;
+    transform: rotate(-36.06deg);
+    left: 215px;
+    top: 18.3px;
+}
+
+.blob3 {
+    z-index: -3;
+    left: 167px;
+    top: 98.5px;
+}
+
+.nikeShoe {
+    z-index: 3;
+    left: 200.5px;
+    top: 68px;
+}
+
+.content .price {
+        position: absolute;
+        height: 29px;
+        width: 100%;
+        /*! border: 1px solid red; */
+        transform: translate(29%,243%);
+    }
+
+
+    .content h1 {
+        width: 50%;
+        /*! border: 1px solid black; */
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        margin-bottom: 2rem;
+    }s
+
+    .content p {
+        margin-top: 1rem;
+    }
+
+    .blob {
+    z-index: -1;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transform: translate(-13%,17%);
+}
+
+.content .logoBehind {
+    border: 1px solid red;
+    position:absolute;
+    left: -11.8%;
+    top: 13.9%;
+    z-index: -1;
+    background: rgba(221, 230, 101, 0.2);
+}

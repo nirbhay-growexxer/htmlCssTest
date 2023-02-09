@@ -1,0 +1,341 @@
+:root{
+    --primary-color:#ADB908;
+    --secondary-color:#E2EA6E;
+    --tertiary-color:#D6DE5A;
+    --dark-color:#313332;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+    padding-left: 9.72%;
+    padding-right: 5%;
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul{
+    list-style: none;
+}
+/* for utility classes */
+
+.txt-primary{
+    background:
+    linear-gradient(
+        94.91deg, var(--primary-color) -1.8%, var(--tertiary-color) 77.41%
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    height: max-content;
+    border-radius: 16px;
+    color: var(--dark-color);
+}
+
+.btn-primary{
+    background: linear-gradient(94.91deg, var(--secondary-color) -1.8%, var(--primary-color) 77.41%);
+    color: var(--dark-color);
+}
+
+.btn-outline{
+    border:1px solid var(--secondary-color)
+}
+
+/* for links on navbar */
+
+
+.flex-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* for navbar */
+
+#navbar{
+    /* border: 1px solid red; */
+    /* padding-left: 9.72%;
+    padding-right: 5%; */
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#navbar .links{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 35%;
+    padding-left: 0;
+}
+
+/* #navbar h2{
+    border: 1px solid black;
+} */
+
+#navbar .shoppingNsearch{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 7%;
+}
+
+#navbar .hamburger{
+    display: none;
+}
+
+#navbar .btn{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 44px;
+    border-radius: 16px;
+}
+
+/* for hero section */
+
+.hero-container{
+    margin-top: 8rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;   /*to not changed its size*/
+    /* justify-content: space-between; */
+    width: 434px;
+    height: 555px;
+}
+
+.content .price{
+    position: absolute;
+    height: 29px;
+    width: 434px;
+    /* border: 1px solid red; */
+    transform: translate(30%,400%);
+    color: rgba(49,51,50,0.7);
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content .logoBehind{
+    position:absolute;
+    left: -11.8%;
+    top: 13.9%;
+    z-index: -1;
+    background: rgba(221, 230, 101, 0.2);
+}
+
+.content h4{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+}
+
+.content h1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.content p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgba(49, 51, 50, 0.7);
+    margin-bottom: 2rem;
+}
+
+
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.buyNow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 74px;
+}
+
+.favourite{
+    margin-left: 1rem;
+    width: 158px;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* for blobs behind the shoe images */
+
+.image-group{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 555px;
+}
+.image-group img{
+    position: absolute;
+}
+.blob{
+    z-index: -1;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transform: translate(-13%,17%);
+}
+
+.blob1{
+    z-index: -1;
+}
+.blob2{
+    z-index: -2;
+    transform: rotate(-36.06deg);
+}
+.blob3{
+    z-index: -3;
+}
+
+.nikeShoe{
+    z-index: 1;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+}
+
+
+/*------------------------ for responsive design -----------------------------*/
+
+@media(max-width:900px)
+{
+    .blob,.logoBehind{
+        display: none;  /* to remove the blobs in smaller screens */
+    }
+
+    #navbar .shoppingNsearch{
+        width: 30%;
+    }
+
+    #navbar .links{
+        display: none;
+    }
+    #navbar .btn{
+        display: none;
+    }
+    #navbar .hamburger{
+        display:block;
+    }
+    
+/* for hero section */
+    .hero-container{
+        /* border: 1px solid red; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .hero-container .image-group{
+        order: 1;
+    }
+
+    .hero-container p{
+        order:4;    
+    }
+    .hero-container h1{
+        order: 2;
+    }
+    .btn-group{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+    }
+
+    .btn-group > .buyNow, .btn-group > .favourite{
+        width: 100%;
+        margin: 1rem 0.5rem;
+    }
+    .btn-group > .favourite{
+        justify-content: center;
+    }
+
+    /* for hero content */
+
+    .nikeShoe{
+        z-index: 1;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .content{
+        width:90%;
+    }
+    .content h4{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin-bottom: 2rem;
+    }
+    
+    .content h1{
+        width: 50%;
+        /* border: 1px solid black; */
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        margin-bottom: 2rem;
+    }
+    
+    .content p{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: rgba(49, 51, 50, 0.7);
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .content .price{
+        position: absolute;
+        height: 29px;
+        width: 65%;
+        /* border: 1px solid red; */
+        transform: translate(70%,243%);
+    }
+
+}
